@@ -11,6 +11,7 @@ import com.jiang.annotaiondemo.inject.InjectUtil;
 import com.jiang.annotaiondemo.inject.ViewInject;
 import com.jiang.annotaiondemo.user.AnnotationProcessor;
 import com.jiang.annotaiondemo.user.User;
+import com.jiang.apt.Code;
 
 @ContentView(R.layout.activity_main)
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -35,7 +36,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Log.d(TAG, user.toString());
             }
         });
+
+
     }
+
+
 
     @Override
     public void onClick(View v) {
