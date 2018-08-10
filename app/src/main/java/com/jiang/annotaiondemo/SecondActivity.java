@@ -18,6 +18,6 @@ public class SecondActivity extends AppCompatActivity {
 
     @Code(author = "pengjiangbin", date = "20180809")
     private void process() {
-        new SecondActivityAutogenerate().message();
+//        new SecondActivityAutogenerate().message();
     }
 }

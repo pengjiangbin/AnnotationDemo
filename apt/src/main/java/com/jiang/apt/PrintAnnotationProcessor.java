@@ -1,17 +1,21 @@
 package com.jiang.apt;
 
+import com.google.auto.service.AutoService;
+
 import java.util.LinkedHashSet;
 import java.util.Set;
 
 import javax.annotation.processing.AbstractProcessor;
 import javax.annotation.processing.Messager;
 import javax.annotation.processing.ProcessingEnvironment;
+import javax.annotation.processing.Processor;
 import javax.annotation.processing.RoundEnvironment;
 import javax.lang.model.SourceVersion;
 import javax.lang.model.element.Element;
 import javax.lang.model.element.TypeElement;
 import javax.tools.Diagnostic;
 
+@AutoService(Processor.class)
 public class PrintAnnotationProcessor extends AbstractProcessor {
     private Messager messager;
 
